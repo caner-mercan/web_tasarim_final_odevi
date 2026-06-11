@@ -11,7 +11,7 @@ en ince ayrıntısına kadar açıklamaktadır.
 ## 📂 BOLUM 1: Odev Sahibi ve Gelistirici Bilgileri
 
 * **Gelisitirici Adi Soyadi:** Caner Mercan
-* **Odev Statusu:** Web Tasarim Odevi (final sınav çalışması)
+* **Odev Statusu:** Web Tasarim Odevi (Donem Ici Standart Odev Calismasi)
 * **Odev Temasi:** Antik Roma'nın Tarihsel Dönemlerini 
   (Krallik, Cumhuriyet, Bati Roma, Bizans) ve Tarihe Yon Veren 
   Liderlerini Sergileyen Cok Sayfali (Multi-Page) Dijital Portal
@@ -34,13 +34,55 @@ yapilandirilmistir:
 * **Modern JavaScript (ES6+):** Tarayici olay tetikleyicileri 
   (Event Listeners), kaydirma vektoru takibi (Scroll Tracking) 
   ve dinamik sinif manipulasyonlari etkin olarak kullanilmistir.
-* **Git & GitHub:** Odevin tum gelistirme surecleri lokalde 
-  Git yazilimi ile takip edilmis ve GitHub uzerinde uzak depoya 
-  guvenli bir sekilde aktarilmistir.
+* **Git & GitHub:** Ödevin tüm geliştirme süreçleri lokalde 
+  Git yazılımı ile takip edilmiş ve GitHub üzerinde uzak depoya 
+  güvenli bir şekilde aktarılmıştır.
 
 ---
 
-## 🔄 BOLUM 3: Donanim Ivmeli Giriş Animasyonlari (keyframes Architecture)
+## 💻 BOLUM 3: Terminal Uzerinden Git Sürüm Kontrol Yönetimi
+
+Projenin yerel bilgisayardaki geliştirme aşamalarından 
+itibaren terminal üzerinde aşağıdaki komut mimarisi 
+sırasıyla işletilerek sürüm kontrolü yapılmıştır:
+
+> 📂 **1. Yerel Deponun Başlatılması**
+> ```bash
+> git init
+> # Proje kok dizininde bos bir Git
+> # reposu olusturuldu. Degisiklikler
+> # anlik olarak izlenmeye baslandi.
+> ```
+
+> 🔍 **2. Dosyaların Takip Listesine Alınması**
+> ```bash
+> git add .
+> # Projedeki tum HTML, CSS ve resim
+> # dosyalari hazirlik alanina
+> # guvenle dahil edildi.
+> ```
+
+> 💾 **3. Değişikliklerin Yerel Depoya Kaydedilmesi**
+> ```bash
+> git commit -m "Roma Tarihi Portali"
+> # Hazirlik alanindaki tum dosyalar
+> # yerel Git veritabanina kalici
+> # olarak muhurlendi.
+> ```
+
+> 🔗 **4. Uzak Depo Bağlantısı ve Push**
+> ```bash
+> git branch -M main
+> git remote add origin https://github.com/caner-mercan/web_tasarim_final_odevi.git
+> git push -u origin main
+> # Ana dal main yapildi, GitHub
+> # uzak sunucu adresi baglandi ve
+> # tum kodlar yuklendi.
+> ```
+
+---
+
+## 🔄 BOLUM 4: Donanim Ivmeli Giriş Animasyonlari (keyframes Architecture)
 
 Kullanıcının siteye giriş anındaki ilk etkileşim kalitesini 
 ve akıcılığı (FPS) artırmak amacıyla tarayıcının donanım ivmesini 
@@ -56,7 +98,7 @@ tetikleyen bir giriş katmanı kurgulanmıştır:
 
 ---
 
-## 💻 BOLUM 4: Yon Duyarli Akilli Navigasyon ve JavaScript DOM Manipulasyonu
+## 💻 BOLUM 5: Yon Duyarli Akilli Navigasyon ve JavaScript DOM Manipulasyonu
 
 Kullanici deneyimini (UX) maksimize etmek ve icerik okuma alanini 
 genisletmek amaciyla JavaScript tabanli anlik scroll izleme motoru 
@@ -74,7 +116,7 @@ yazilmistir:
 
 ---
 
-## 🎨 BOLUM 5: Asimetrik Geometrik Kesimler ve Gorsel Bölücüler (clip-path)
+## 🎨 BOLUM 6: Asimetrik Geometrik Kesimler ve Gorsel Bölücüler (clip-path)
 
 Web arayuzundeki dogrusal monotonlugu kirmak ve tarihsel kirilma 
 anlarini gorsel olarak vurgulamak amaciyla matematiksel kesim 
@@ -88,10 +130,10 @@ modelleri uygulanmistir:
 
 ---
 
-## 🔁 BOLUM 6: Esnek Odakli Indeks Modulu (Dual-Wrap Flex Interactivity)
+## 🔁 BOLUM 7: Esnek Odakli Indeks Modulu (Dual-Wrap Flex Interactivity)
 
 Bati Roma ve Doğu Roma (Bizans) medeniyetlerinin karsilastirildigi 
-interaktif alan, CSS Flexbox esnekligi ve animasyon senkronizasyonu 
+interaktif alan, CSS Flexbox esnekligi and animasyon senkronizasyonu 
 ile insa edilmistir:
 
 * **Dengeli Dagilim:** Genis ekranlarda .dual-wrap kapsayicisi 
@@ -104,10 +146,10 @@ ile insa edilmistir:
 
 ---
 
-## 💾 BOLUM 7: Parallaks Arka Plan ve Katmanli Derinlik Yonetimi
+## 💾 BOLUM 8: Parallaks Arka Plan ve Katmanli Derinlik Yonetimi
 
 Gorsel zenginligin web performansini dusurmesini engellemek 
-adina CSS tabanli hafif bir katmanlama teknigi kullanilmistir:
+adina CSS tabanli hafif bir katmanlama teknik kullanilmistir:
 
 * **Fixed Arka Plan:** Imparatorlugun yuzyillar icindeki sinir 
   degisimlerini gosteren detayli harita gorseli (image_4.jpg), 
@@ -120,7 +162,7 @@ adina CSS tabanli hafif bir katmanlama teknigi kullanilmistir:
 
 ---
 
-## 📱 BOLUM 8: Coklu Ekran Adaptasyonu (Responsive Grid & Flexbox)
+## 📱 BOLUM 9: Coklu Ekran Adaptasyonu (Responsive Grid & Flexbox)
 
 Portalin tum cihaz jenerasyonlarinda (Mobil, Tablet, Masaüstü) 
 gorsel bir kirilma yasamadan calismasi esnek yerlesim 
@@ -136,7 +178,7 @@ algoritmalariyla garanti altina alinmistir:
 
 ---
 
-## 📂 BOLUM 9: Detayli Klasor ve Proje Dosya Yapısı
+## 📂 BOLUM 10: Detayli Klasor ve Proje Dosya Yapısı
 
 Proje dizini, tarayıcıların ve bulut sunucuların hiyerarşik 
 olarak dosyaları kayıpsız okuyabilmesi için kök dizinde 
@@ -160,7 +202,7 @@ olarak dosyaları kayıpsız okuyabilmesi için kök dizinde
 
 ---
 
-## 💻 BOLUM 10: Lokal Geliştirme ve Dağıtım Ortamı Simülasyonu
+## 💻 BOLUM 11: Lokal Geliştirme ve Dağıtım Ortamı Simülasyonu
 
 Projenin yerel bilgisayarlarda (localhost) sorunsuz bir sekilde 
 test edilebilmesi ve tarayici dosya protokolü kısıtlamalarına 
@@ -177,14 +219,14 @@ takılmamasi için iki temel simülasyon stratejisi belirlenmiştir:
 > Gelistirme ortamında Visual Studio Code editoru ve yerlesik 
 > Live Server Extension (Ritwick Dey) eklentisi kullanilmistir. 
 > Bu mekanizma, index.html dosyasinin bulundugu dizini kok kabul 
-> ederek yerel bir ağ soketi acar (http://127.0.0.1:5500) ve koddaki 
+> ederek yerel bir ağ soketi acar ([http://127.0.0.1:5500](http://127.0.0.1:5500)) ve koddaki 
 > her dosya kaydetme isleminde (Ctrl+S) tarayiciya otomatik yenileme 
 > (Hot-Reload) sinyali gonderir. Bu sayede canli sunucu davranisi 
 > lokalde birebir simule edilir.
 
 ---
 
-## 🔗 BOLUM 11: CI/CD Pipeline, Otomasyon ve Canli Yayin Mimari Baglantilari
+## 🔗 BOLUM 12: CI/CD Pipeline, Otomasyon ve Canli Yayin Mimari Baglantilari
 
 Projenin internet ortamindaki dagitimi (deployment), endustriyel 
 standartlarda kabul goren bulut tabanli bir surekli entegrasyon 
