@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roma Portalı | S.P.Q.R</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">S.P.Q.R</div>
+        <div class="nav-links">
+            <a href="krallar.html">Krallar</a>
+            <a href="cumhuriyet.html">Cumhuriyet</a>
+            <a href="bati-roma.html">Batı Roma</a>
+            <a href="bizans.html">Bizans</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Roma'nın Ebedi Görkemi</h1>
+        <p>Efsanelerden gerçeklere, tarihin en büyük mirası.</p>
+    </header>
+
+    <div class="quote-box">
+        <h3>"Veni, Vidi, Vici"</h3>
+        <p>Geldim, Gördüm, Yendim. - Jül Sezar</p>
+    </div>
+
+    <section class="card-grid">
+        <div class="card">
+            <img src="image_0.jpg">
+            <div class="card-body">
+                <h3>Roma Kralları</h3>
+                <a href="krallar.html" class="btn">Keşfet</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image_2.jpg">
+            <div class="card-body">
+                <h3>Roma Cumhuriyeti</h3>
+                <a href="cumhuriyet.html" class="btn">Keşfet</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider">
+        <h2>M.S. 395: İmparatorluk İkiye Ayrılıyor</h2>
+    </div>
+
+    <section class="dual-wrap">
+        <div class="side bati">
+            <h2>Batı Roma</h2>
+            <p>Antik Avrupa'nın koruyucusu.</p>
+            <a href="bati-roma.html" class="btn">İncele</a>
+        </div>
+        <div class="side bizans">
+            <h2>Bizans</h2>
+            <p>Doğu'nun sarsılmaz kalesi.</p>
+            <a href="bizans.html" class="btn">İncele</a>
+        </div>
+    </section>
+
+    <div class="fact-box">
+        <h2>Biliyor muydunuz?</h2>
+        <p>Romalılar yolları o kadar düzgün yapmıştır ki, "Tüm yollar Roma'ya çıkar" sözü buradan gelir.</p>
+    </div>
+
+    <h2 class="section-title">Tarihe Yön Verenler</h2>
+    <section class="people-grid">
+        <div class="person-card"><img src="roman_1.jpg"><div class="person-name">Jül Sezar</div></div>
+        <div class="person-card"><img src="roman_2.jpg"><div class="person-name">Augustus</div></div>
+        <div class="person-card"><img src="roman_3.jpg"><div class="person-name">Neron</div></div>
+        <div class="person-card"><img src="roman_4.jpg"><div class="person-name">Justinianus</div></div>
+    </section>
+
+    <footer>&copy; 2026 Roma Tarihi Projesi | Tüm Hakları Saklıdır</footer>
+
+    <script>
+        let lastScroll = 0;
+        const nav = document.getElementById("navbar");
+        window.addEventListener("scroll", () => {
+            let current = window.pageYOffset || document.documentElement.scrollTop;
+            if (current > lastScroll && current > 100) nav.classList.add("nav-hidden");
+            else nav.classList.remove("nav-hidden");
+            lastScroll = current;
+        });
+    </script>
+</body>
+</html>

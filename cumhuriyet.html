@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roma Cumhuriyeti | S.P.Q.R</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">S.P.Q.R</div>
+        <div class="nav-links"><a href="index.html">ANA SAYFA</a></div>
+    </nav>
+
+    <main class="info-content">
+        <h1 class="section-title">Roma Cumhuriyeti</h1>
+        <img src="image_2.jpg" class="info-image">
+        
+        <div class="info-text">
+            <p>Cumhuriyet dönemi, Roma'nın Senato tarafından yönetildiği ve Akdeniz'in hakimiyetini ele geçirdiği en güçlü dönemidir.</p>
+            <p>Jül Sezar ve Pompey gibi büyük komutanların yükselişiyle beraber, Cumhuriyet yerini kademeli olarak imparatorluk rejimine bırakmıştır.</p>
+        </div>
+
+        <div class="quote-box" style="margin-top: 30px;">
+            <h3>"Alea Iacta Est"</h3>
+            <p>Zarlar Atıldı. - Jül Sezar</p>
+        </div>
+    </main>
+
+    <footer>&copy; 2026 Roma Tarihi Projesi</footer>
+
+    <script>
+        let lastScroll = 0;
+        const nav = document.getElementById("navbar");
+        window.addEventListener("scroll", () => {
+            let top = window.pageYOffset || document.documentElement.scrollTop;
+            if (top > lastScroll && top > 100) nav.classList.add("nav-hidden");
+            else nav.classList.remove("nav-hidden");
+            lastScroll = top;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roma Kralları | S.P.Q.R</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">S.P.Q.R</div>
+        <div class="nav-links"><a href="index.html">ANA SAYFA</a></div>
+    </nav>
+
+    <main class="info-content">
+        <h1 class="section-title">Roma Krallığı</h1>
+        <img src="image_0.jpg" class="info-image">
+        
+        <div class="info-text">
+            <p>M.Ö. 753 yılında Romulus tarafından kurulan Roma, başlangıçta yedi efsanevi kral tarafından yönetilmiştir. Bu dönem, Roma'nın askeri ve dini temellerinin atıldığı süreçtir.</p>
+            <p>Krallar dönemi, halkın adaletsizliğe karşı başkaldırması ve son kralın kovulmasıyla M.Ö. 509'da sona ermiştir.</p>
+        </div>
+
+        <div class="quote-box" style="margin-top: 30px;">
+            <h3>"Roma tek bir günde kurulmadı."</h3>
+        </div>
+    </main>
+
+    <footer>&copy; 2026 Roma Tarihi Projesi</footer>
+
+    <script>
+        let lastScroll = 0;
+        const nav = document.getElementById("navbar");
+        window.addEventListener("scroll", () => {
+            let top = window.pageYOffset || document.documentElement.scrollTop;
+            if (top > lastScroll && top > 100) nav.classList.add("nav-hidden");
+            else nav.classList.remove("nav-hidden");
+            lastScroll = top;
+        });
+    </script>
+</body>
+</html>

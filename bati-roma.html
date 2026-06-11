@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batı Roma | S.P.Q.R</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">S.P.Q.R</div>
+        <div class="nav-links"><a href="index.html">ANA SAYFA</a></div>
+    </nav>
+
+    <main class="info-content">
+        <h1 class="section-title">Batı Roma</h1>
+        <img src="image_3.jpg" class="info-image">
+        
+        <div class="info-text">
+            <p>M.S. 395'te ayrılan imparatorluğun Batı kanadı, barbar istilaları ve ekonomik çöküşle mücadele etmiştir.</p>
+            <p>M.S. 476 yılında son imparator Romulus Augustus'un tahttan indirilmesiyle Antik Çağ sona ermiş ve Orta Çağ başlamıştır.</p>
+        </div>
+
+        <div class="quote-box" style="margin-top: 30px;">
+            <h3>"Roma Düştüğünde, Dünya da Düşecek."</h3>
+        </div>
+    </main>
+
+    <footer>&copy; 2026 Roma Tarihi Projesi</footer>
+
+    <script>
+        let lastScroll = 0;
+        const nav = document.getElementById("navbar");
+        window.addEventListener("scroll", () => {
+            let top = window.pageYOffset || document.documentElement.scrollTop;
+            if (top > lastScroll && top > 100) nav.classList.add("nav-hidden");
+            else nav.classList.remove("nav-hidden");
+            lastScroll = top;
+        });
+    </script>
+</body>
+</html>
